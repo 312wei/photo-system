@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch Image Upload</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Batch Image Uploader</h1>
+        </div>
+    </header>
+    <main>
+        <section class="upload-section">
+            <div class="container">
+                <h2>Upload Images</h2>
+                <form id="upload-form" method="post" action="/upload" enctype="multipart/form-data">
+                    <input id="file-input" name="files" type="file" multiple accept="image/*">
+                    <button type="submit" class="upload-button">Upload</button>
+                </form>
+                <div id="progress-container"></div>
+            </div>
+        </section>
+        <section class="gallery-section">
+            <div class="container">
+                <h2>Uploaded Images</h2>
+                <div id="image-gallery" class="image-gallery"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Batch Image Uploader. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="/static/script.js"></script>
+</body>
+</html>

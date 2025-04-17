@@ -1,0 +1,32 @@
+.app-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-uploader, .image-filter, .image-list {
+  margin: 20px 0;
+}
+
+.image-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.image-list li {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+.image-list img {
+  max-width: 150px;
+  max-height: 150px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
